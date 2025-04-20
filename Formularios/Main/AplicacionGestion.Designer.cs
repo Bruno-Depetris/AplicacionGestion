@@ -27,25 +27,26 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AplicacionGestion));
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.panel_ContenedorMenu = new ReaLTaiizor.Controls.Panel();
-            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
-            this.bigLabel_Hora = new ReaLTaiizor.Controls.BigLabel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel_Senializador = new ReaLTaiizor.Controls.Panel();
             this.parrotButton_Configuracion = new ReaLTaiizor.Controls.ParrotButton();
             this.parrotButton_Cliente = new ReaLTaiizor.Controls.ParrotButton();
             this.parrotButton_Caja = new ReaLTaiizor.Controls.ParrotButton();
             this.parrotButton_Stock = new ReaLTaiizor.Controls.ParrotButton();
-            this.panel_EstadoConeccion = new ReaLTaiizor.Controls.Panel();
             this.parrotButton_Vender = new ReaLTaiizor.Controls.ParrotButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
+            this.bigLabel_Hora = new ReaLTaiizor.Controls.BigLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_EstadoConeccion = new ReaLTaiizor.Controls.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel_Senializador = new ReaLTaiizor.Controls.Panel();
             this.panel_Contenedor = new System.Windows.Forms.Panel();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.label_Estado = new System.Windows.Forms.Label();
             this.panel_ContenedorMenu.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // nightControlBox1
@@ -63,7 +64,7 @@
             this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(898, 0);
+            this.nightControlBox1.Location = new System.Drawing.Point(914, 0);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -89,29 +90,31 @@
             this.panel_ContenedorMenu.TabIndex = 4;
             this.panel_ContenedorMenu.Text = "panel1";
             // 
-            // bigLabel1
+            // panel3
             // 
-            this.bigLabel1.AutoSize = true;
-            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 25F);
-            this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.bigLabel1.Location = new System.Drawing.Point(17, 46);
-            this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(215, 46);
-            this.bigLabel1.TabIndex = 6;
-            this.bigLabel1.Text = "Bienvenido/a";
+            this.panel3.Controls.Add(this.panel_Senializador);
+            this.panel3.Controls.Add(this.parrotButton_Configuracion);
+            this.panel3.Controls.Add(this.parrotButton_Cliente);
+            this.panel3.Controls.Add(this.parrotButton_Caja);
+            this.panel3.Controls.Add(this.parrotButton_Stock);
+            this.panel3.Controls.Add(this.parrotButton_Vender);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(5, 140);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(249, 293);
+            this.panel3.TabIndex = 9;
             // 
-            // bigLabel_Hora
+            // panel_Senializador
             // 
-            this.bigLabel_Hora.AutoSize = true;
-            this.bigLabel_Hora.BackColor = System.Drawing.Color.Transparent;
-            this.bigLabel_Hora.Font = new System.Drawing.Font("Segoe UI", 25F);
-            this.bigLabel_Hora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.bigLabel_Hora.Location = new System.Drawing.Point(52, 0);
-            this.bigLabel_Hora.Name = "bigLabel_Hora";
-            this.bigLabel_Hora.Size = new System.Drawing.Size(142, 46);
-            this.bigLabel_Hora.TabIndex = 5;
-            this.bigLabel_Hora.Text = "20:04:00";
+            this.panel_Senializador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(107)))), ((int)(((byte)(242)))));
+            this.panel_Senializador.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
+            this.panel_Senializador.Location = new System.Drawing.Point(0, 13);
+            this.panel_Senializador.Name = "panel_Senializador";
+            this.panel_Senializador.Padding = new System.Windows.Forms.Padding(5);
+            this.panel_Senializador.Size = new System.Drawing.Size(10, 55);
+            this.panel_Senializador.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.panel_Senializador.TabIndex = 5;
+            this.panel_Senializador.Text = "panel1";
             // 
             // parrotButton_Configuracion
             // 
@@ -213,18 +216,6 @@
             this.parrotButton_Stock.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.parrotButton_Stock.Click += new System.EventHandler(this.parrotButton_Stock_Click);
             // 
-            // panel_EstadoConeccion
-            // 
-            this.panel_EstadoConeccion.BackColor = System.Drawing.Color.Red;
-            this.panel_EstadoConeccion.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
-            this.panel_EstadoConeccion.Location = new System.Drawing.Point(106, 16);
-            this.panel_EstadoConeccion.Name = "panel_EstadoConeccion";
-            this.panel_EstadoConeccion.Padding = new System.Windows.Forms.Padding(5);
-            this.panel_EstadoConeccion.Size = new System.Drawing.Size(11, 11);
-            this.panel_EstadoConeccion.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.panel_EstadoConeccion.TabIndex = 5;
-            this.panel_EstadoConeccion.Text = "panel1";
-            // 
             // parrotButton_Vender
             // 
             this.parrotButton_Vender.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
@@ -250,6 +241,63 @@
             this.parrotButton_Vender.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.parrotButton_Vender.Click += new System.EventHandler(this.parrotButton_Vender_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.bigLabel1);
+            this.panel2.Controls.Add(this.bigLabel_Hora);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(5, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(249, 135);
+            this.panel2.TabIndex = 8;
+            // 
+            // bigLabel1
+            // 
+            this.bigLabel1.AutoSize = true;
+            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.bigLabel1.Location = new System.Drawing.Point(17, 46);
+            this.bigLabel1.Name = "bigLabel1";
+            this.bigLabel1.Size = new System.Drawing.Size(215, 46);
+            this.bigLabel1.TabIndex = 6;
+            this.bigLabel1.Text = "Bienvenido/a";
+            // 
+            // bigLabel_Hora
+            // 
+            this.bigLabel_Hora.AutoSize = true;
+            this.bigLabel_Hora.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel_Hora.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.bigLabel_Hora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.bigLabel_Hora.Location = new System.Drawing.Point(52, 0);
+            this.bigLabel_Hora.Name = "bigLabel_Hora";
+            this.bigLabel_Hora.Size = new System.Drawing.Size(142, 46);
+            this.bigLabel_Hora.TabIndex = 5;
+            this.bigLabel_Hora.Text = "20:04:00";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label_Estado);
+            this.panel1.Controls.Add(this.panel_EstadoConeccion);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(5, 517);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(249, 34);
+            this.panel1.TabIndex = 7;
+            // 
+            // panel_EstadoConeccion
+            // 
+            this.panel_EstadoConeccion.BackColor = System.Drawing.Color.Red;
+            this.panel_EstadoConeccion.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
+            this.panel_EstadoConeccion.Location = new System.Drawing.Point(106, 16);
+            this.panel_EstadoConeccion.Name = "panel_EstadoConeccion";
+            this.panel_EstadoConeccion.Padding = new System.Windows.Forms.Padding(5);
+            this.panel_EstadoConeccion.Size = new System.Drawing.Size(11, 11);
+            this.panel_EstadoConeccion.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.panel_EstadoConeccion.TabIndex = 5;
+            this.panel_EstadoConeccion.Text = "panel1";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -261,20 +309,11 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Conexión:";
             // 
-            // panel_Senializador
-            // 
-            this.panel_Senializador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(107)))), ((int)(((byte)(242)))));
-            this.panel_Senializador.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
-            this.panel_Senializador.Location = new System.Drawing.Point(0, 13);
-            this.panel_Senializador.Name = "panel_Senializador";
-            this.panel_Senializador.Padding = new System.Windows.Forms.Padding(5);
-            this.panel_Senializador.Size = new System.Drawing.Size(10, 55);
-            this.panel_Senializador.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.panel_Senializador.TabIndex = 5;
-            this.panel_Senializador.Text = "panel1";
-            // 
             // panel_Contenedor
             // 
+            this.panel_Contenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_Contenedor.Location = new System.Drawing.Point(269, 37);
             this.panel_Contenedor.Name = "panel_Contenedor";
             this.panel_Contenedor.Size = new System.Drawing.Size(756, 524);
@@ -285,39 +324,16 @@
             this.timer.Enabled = true;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // panel1
+            // label_Estado
             // 
-            this.panel1.Controls.Add(this.panel_EstadoConeccion);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(5, 517);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 34);
-            this.panel1.TabIndex = 7;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.bigLabel1);
-            this.panel2.Controls.Add(this.bigLabel_Hora);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(5, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(249, 135);
-            this.panel2.TabIndex = 8;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.panel_Senializador);
-            this.panel3.Controls.Add(this.parrotButton_Configuracion);
-            this.panel3.Controls.Add(this.parrotButton_Cliente);
-            this.panel3.Controls.Add(this.parrotButton_Caja);
-            this.panel3.Controls.Add(this.parrotButton_Stock);
-            this.panel3.Controls.Add(this.parrotButton_Vender);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(5, 140);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(249, 293);
-            this.panel3.TabIndex = 9;
+            this.label_Estado.AutoSize = true;
+            this.label_Estado.Font = new System.Drawing.Font("Arboria Book", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Estado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label_Estado.Location = new System.Drawing.Point(123, 11);
+            this.label_Estado.Name = "label_Estado";
+            this.label_Estado.Size = new System.Drawing.Size(80, 19);
+            this.label_Estado.TabIndex = 6;
+            this.label_Estado.Text = "Conexión:";
             // 
             // AplicacionGestion
             // 
@@ -339,11 +355,11 @@
             this.SizeChanged += new System.EventHandler(this.AplicacionGestion_SizeChanged);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AplicacionGestion_MouseDown);
             this.panel_ContenedorMenu.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -367,6 +383,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label_Estado;
     }
 }
 

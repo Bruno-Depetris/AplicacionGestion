@@ -54,10 +54,19 @@
     <Compile Include="Formularios\Main\AplicacionGestion.Designer.cs">
       <DependentUpon>AplicacionGestion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Vender\VenderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Vender\VenderForm.Designer.cs">
+      <DependentUpon>VenderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Main\AplicacionGestion.resx">
       <DependentUpon>AplicacionGestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Vender\VenderForm.resx">
+      <DependentUpon>VenderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

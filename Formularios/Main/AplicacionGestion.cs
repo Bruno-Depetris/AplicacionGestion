@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using AplicacionGestion.BaseDatos.Conexion;
+using AplicacionGestion.Formularios.Vender;
 
 
 namespace WindowsFormsApp1 {
@@ -38,8 +39,10 @@ namespace WindowsFormsApp1 {
         private void ComprobarConexion() {
             if (Conectar.Comprobar()) {
                 panel_EstadoConeccion.BackColor = Color.Green;
+                label_Estado.Text = "Exito";    
             } else {
                 panel_EstadoConeccion.BackColor = Color.Red;
+                label_Estado.Text = "Error";
             }
 
         }
@@ -79,6 +82,7 @@ namespace WindowsFormsApp1 {
 
         private void parrotButton_Vender_Click(object sender, EventArgs e) {
             MoverPanel(parrotButton_Vender);
+            AbrirFormNuevo(new VenderForm());
         }
 
         private void parrotButton_Stock_Click(object sender, EventArgs e) {
