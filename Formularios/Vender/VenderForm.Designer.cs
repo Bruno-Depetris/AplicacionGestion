@@ -24,6 +24,9 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VenderForm));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -34,27 +37,42 @@
             this.parrotButton_Busacr = new ReaLTaiizor.Controls.ParrotButton();
             this.parrotButton_Cargar = new ReaLTaiizor.Controls.ParrotButton();
             this.panel1 = new ReaLTaiizor.Controls.Panel();
-            this.hopeComboBox1 = new ReaLTaiizor.Controls.HopeComboBox();
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bigLabel2 = new ReaLTaiizor.Controls.BigLabel();
-            this.hopeComboBox2 = new ReaLTaiizor.Controls.HopeComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.poisonDataGridView1 = new ReaLTaiizor.Controls.PoisonDataGridView();
+            this.poisonDataGridView_Productos = new ReaLTaiizor.Controls.PoisonDataGridView();
+            this.panel_ControlContenedor = new ReaLTaiizor.Controls.Panel();
+            this.Column_ProductoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_CategoriaID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_PrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.parrotButton1 = new ReaLTaiizor.Controls.ParrotButton();
+            this.poisonDataGridView_VistaPrevia = new ReaLTaiizor.Controls.PoisonDataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView_Productos)).BeginInit();
+            this.panel_ControlContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView_VistaPrevia)).BeginInit();
             this.SuspendLayout();
             // 
             // hopeTextBox_Telefono
             // 
-            this.hopeTextBox_Telefono.BackColor = System.Drawing.Color.White;
+            this.hopeTextBox_Telefono.BackColor = System.Drawing.Color.LightSteelBlue;
             this.hopeTextBox_Telefono.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.hopeTextBox_Telefono.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox_Telefono.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.hopeTextBox_Telefono.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
             this.hopeTextBox_Telefono.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.hopeTextBox_Telefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.hopeTextBox_Telefono.Hint = "Telefono";
@@ -76,10 +94,10 @@
             // 
             this.hopeTextBox_Gmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.hopeTextBox_Gmail.BackColor = System.Drawing.Color.White;
+            this.hopeTextBox_Gmail.BackColor = System.Drawing.Color.LightSteelBlue;
             this.hopeTextBox_Gmail.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.hopeTextBox_Gmail.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox_Gmail.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.hopeTextBox_Gmail.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
             this.hopeTextBox_Gmail.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.hopeTextBox_Gmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.hopeTextBox_Gmail.Hint = "Gmail";
@@ -99,10 +117,10 @@
             // 
             // hopeTextBox_Nombre
             // 
-            this.hopeTextBox_Nombre.BackColor = System.Drawing.Color.White;
+            this.hopeTextBox_Nombre.BackColor = System.Drawing.Color.LightSteelBlue;
             this.hopeTextBox_Nombre.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.hopeTextBox_Nombre.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox_Nombre.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.hopeTextBox_Nombre.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
             this.hopeTextBox_Nombre.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.hopeTextBox_Nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.hopeTextBox_Nombre.Hint = "Nombre";
@@ -124,10 +142,10 @@
             // 
             this.hopeTextBox_Direccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.hopeTextBox_Direccion.BackColor = System.Drawing.Color.White;
+            this.hopeTextBox_Direccion.BackColor = System.Drawing.Color.LightSteelBlue;
             this.hopeTextBox_Direccion.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.hopeTextBox_Direccion.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox_Direccion.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.hopeTextBox_Direccion.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
             this.hopeTextBox_Direccion.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.hopeTextBox_Direccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.hopeTextBox_Direccion.Hint = "Direccion";
@@ -215,19 +233,6 @@
             this.panel1.TabIndex = 16;
             this.panel1.Text = "panel1";
             // 
-            // hopeComboBox1
-            // 
-            this.hopeComboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.hopeComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hopeComboBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeComboBox1.FormattingEnabled = true;
-            this.hopeComboBox1.ItemHeight = 30;
-            this.hopeComboBox1.Location = new System.Drawing.Point(8, 111);
-            this.hopeComboBox1.Name = "hopeComboBox1";
-            this.hopeComboBox1.Size = new System.Drawing.Size(300, 36);
-            this.hopeComboBox1.TabIndex = 17;
-            // 
             // bigLabel1
             // 
             this.bigLabel1.AutoSize = true;
@@ -255,9 +260,9 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel3.Location = new System.Drawing.Point(13, 24);
+            this.panel3.Location = new System.Drawing.Point(8, 23);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(571, 1);
+            this.panel3.Size = new System.Drawing.Size(580, 1);
             this.panel3.TabIndex = 21;
             // 
             // bigLabel2
@@ -272,19 +277,7 @@
             this.bigLabel2.Size = new System.Drawing.Size(158, 40);
             this.bigLabel2.TabIndex = 20;
             this.bigLabel2.Text = "Producto";
-            // 
-            // hopeComboBox2
-            // 
-            this.hopeComboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.hopeComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hopeComboBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeComboBox2.FormattingEnabled = true;
-            this.hopeComboBox2.ItemHeight = 30;
-            this.hopeComboBox2.Location = new System.Drawing.Point(8, 153);
-            this.hopeComboBox2.Name = "hopeComboBox2";
-            this.hopeComboBox2.Size = new System.Drawing.Size(300, 36);
-            this.hopeComboBox2.TabIndex = 22;
+            this.bigLabel2.Click += new System.EventHandler(this.bigLabel2_Click);
             // 
             // panel4
             // 
@@ -299,33 +292,173 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.poisonDataGridView1);
-            this.panel5.Controls.Add(this.hopeComboBox2);
+            this.panel5.Controls.Add(this.poisonDataGridView_VistaPrevia);
+            this.panel5.Controls.Add(this.panel_ControlContenedor);
+            this.panel5.Controls.Add(this.poisonDataGridView_Productos);
             this.panel5.Controls.Add(this.panel3);
             this.panel5.Controls.Add(this.bigLabel2);
-            this.panel5.Controls.Add(this.hopeComboBox1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 191);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 188);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(756, 333);
+            this.panel5.Size = new System.Drawing.Size(756, 336);
             this.panel5.TabIndex = 24;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // poisonDataGridView1
+            // poisonDataGridView_Productos
             // 
-            this.poisonDataGridView1.AllowUserToResizeRows = false;
-            this.poisonDataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.poisonDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.poisonDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.poisonDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            this.poisonDataGridView_Productos.AllowUserToAddRows = false;
+            this.poisonDataGridView_Productos.AllowUserToResizeRows = false;
+            this.poisonDataGridView_Productos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.poisonDataGridView_Productos.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.poisonDataGridView_Productos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.poisonDataGridView_Productos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.poisonDataGridView_Productos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arboria Book", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.AliceBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.poisonDataGridView_Productos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.poisonDataGridView_Productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.poisonDataGridView_Productos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column_ProductoID,
+            this.Column_Producto,
+            this.Column_CategoriaID,
+            this.Column_Categoria,
+            this.Column_Stock,
+            this.Column_PrecioVenta});
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.poisonDataGridView_Productos.DefaultCellStyle = dataGridViewCellStyle5;
+            this.poisonDataGridView_Productos.EnableHeadersVisualStyles = false;
+            this.poisonDataGridView_Productos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.poisonDataGridView_Productos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.poisonDataGridView_Productos.Location = new System.Drawing.Point(8, 50);
+            this.poisonDataGridView_Productos.Name = "poisonDataGridView_Productos";
+            this.poisonDataGridView_Productos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.poisonDataGridView_Productos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.poisonDataGridView_Productos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.poisonDataGridView_Productos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.poisonDataGridView_Productos.Size = new System.Drawing.Size(535, 177);
+            this.poisonDataGridView_Productos.TabIndex = 22;
+            // 
+            // panel_ControlContenedor
+            // 
+            this.panel_ControlContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ControlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
+            this.panel_ControlContenedor.Controls.Add(this.parrotButton1);
+            this.panel_ControlContenedor.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.panel_ControlContenedor.Location = new System.Drawing.Point(549, 50);
+            this.panel_ControlContenedor.Name = "panel_ControlContenedor";
+            this.panel_ControlContenedor.Size = new System.Drawing.Size(199, 283);
+            this.panel_ControlContenedor.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.panel_ControlContenedor.TabIndex = 17;
+            // 
+            // Column_ProductoID
+            // 
+            this.Column_ProductoID.HeaderText = "ProductoID";
+            this.Column_ProductoID.Name = "Column_ProductoID";
+            this.Column_ProductoID.Visible = false;
+            // 
+            // Column_Producto
+            // 
+            this.Column_Producto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column_Producto.HeaderText = "Producto";
+            this.Column_Producto.Name = "Column_Producto";
+            // 
+            // Column_CategoriaID
+            // 
+            this.Column_CategoriaID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column_CategoriaID.HeaderText = "CategoriaID";
+            this.Column_CategoriaID.Name = "Column_CategoriaID";
+            this.Column_CategoriaID.Visible = false;
+            // 
+            // Column_Categoria
+            // 
+            this.Column_Categoria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column_Categoria.HeaderText = "Categoria";
+            this.Column_Categoria.Name = "Column_Categoria";
+            // 
+            // Column_Stock
+            // 
+            this.Column_Stock.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column_Stock.HeaderText = "Stock";
+            this.Column_Stock.Name = "Column_Stock";
+            // 
+            // Column_PrecioVenta
+            // 
+            this.Column_PrecioVenta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column_PrecioVenta.HeaderText = "Precio";
+            this.Column_PrecioVenta.Name = "Column_PrecioVenta";
+            // 
+            // parrotButton1
+            // 
+            this.parrotButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.parrotButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
+            this.parrotButton1.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton1.ButtonImage")));
+            this.parrotButton1.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            this.parrotButton1.ButtonText = "Buscar";
+            this.parrotButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.parrotButton1.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.parrotButton1.CornerRadius = 5;
+            this.parrotButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.parrotButton1.Font = new System.Drawing.Font("Arboria Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parrotButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.parrotButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.parrotButton1.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.parrotButton1.Location = new System.Drawing.Point(0, 3);
+            this.parrotButton1.Name = "parrotButton1";
+            this.parrotButton1.Size = new System.Drawing.Size(199, 38);
+            this.parrotButton1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.parrotButton1.TabIndex = 6;
+            this.parrotButton1.TextColor = System.Drawing.Color.White;
+            this.parrotButton1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.parrotButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // poisonDataGridView_VistaPrevia
+            // 
+            this.poisonDataGridView_VistaPrevia.AllowUserToAddRows = false;
+            this.poisonDataGridView_VistaPrevia.AllowUserToResizeRows = false;
+            this.poisonDataGridView_VistaPrevia.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.poisonDataGridView_VistaPrevia.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.poisonDataGridView_VistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.poisonDataGridView_VistaPrevia.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.poisonDataGridView_VistaPrevia.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arboria Book", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.AliceBlue;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.poisonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.poisonDataGridView_VistaPrevia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.poisonDataGridView_VistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.poisonDataGridView_VistaPrevia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -333,13 +466,13 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.poisonDataGridView1.EnableHeadersVisualStyles = false;
-            this.poisonDataGridView1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.poisonDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.poisonDataGridView1.Location = new System.Drawing.Point(381, 43);
-            this.poisonDataGridView1.Name = "poisonDataGridView1";
-            this.poisonDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.poisonDataGridView_VistaPrevia.DefaultCellStyle = dataGridViewCellStyle2;
+            this.poisonDataGridView_VistaPrevia.EnableHeadersVisualStyles = false;
+            this.poisonDataGridView_VistaPrevia.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.poisonDataGridView_VistaPrevia.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.poisonDataGridView_VistaPrevia.Location = new System.Drawing.Point(8, 233);
+            this.poisonDataGridView_VistaPrevia.Name = "poisonDataGridView_VistaPrevia";
+            this.poisonDataGridView_VistaPrevia.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -347,11 +480,48 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.poisonDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.poisonDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.poisonDataGridView1.Size = new System.Drawing.Size(367, 278);
-            this.poisonDataGridView1.TabIndex = 23;
+            this.poisonDataGridView_VistaPrevia.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.poisonDataGridView_VistaPrevia.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.poisonDataGridView_VistaPrevia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.poisonDataGridView_VistaPrevia.Size = new System.Drawing.Size(535, 100);
+            this.poisonDataGridView_VistaPrevia.TabIndex = 23;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "ProductoID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Producto";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.HeaderText = "CategoriaID";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Categoria";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Stock";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn6.HeaderText = "Precio";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // VenderForm
             // 
@@ -370,7 +540,9 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView_Productos)).EndInit();
+            this.panel_ControlContenedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView_VistaPrevia)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -384,14 +556,27 @@
         private ReaLTaiizor.Controls.ParrotButton parrotButton_Busacr;
         private ReaLTaiizor.Controls.ParrotButton parrotButton_Cargar;
         private ReaLTaiizor.Controls.Panel panel1;
-        private ReaLTaiizor.Controls.HopeComboBox hopeComboBox1;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private ReaLTaiizor.Controls.BigLabel bigLabel2;
-        private ReaLTaiizor.Controls.HopeComboBox hopeComboBox2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView1;
+        private ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView_Productos;
+        private ReaLTaiizor.Controls.Panel panel_ControlContenedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_ProductoID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_Producto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_CategoriaID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_Categoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_Stock;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_PrecioVenta;
+        private ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView_VistaPrevia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private ReaLTaiizor.Controls.ParrotButton parrotButton1;
     }
 }

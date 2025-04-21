@@ -21,5 +21,13 @@ namespace AplicacionGestion.Formularios.Vender {
         private void bigLabel3_Click(object sender, EventArgs e) {
 
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e) {
+
+        }
+
+        private void bigLabel2_Click(object sender, EventArgs e) {
+
+        }
     }
 }

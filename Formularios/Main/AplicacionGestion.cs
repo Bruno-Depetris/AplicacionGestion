@@ -39,10 +39,10 @@ namespace WindowsFormsApp1 {
         private void ComprobarConexion() {
             if (Conectar.Comprobar()) {
                 panel_EstadoConeccion.BackColor = Color.Green;
-                label_Estado.Text = "Exito";    
+                label_Estado.Text = "Exitosa";    
             } else {
                 panel_EstadoConeccion.BackColor = Color.Red;
-                label_Estado.Text = "Error";
+                label_Estado.Text = "Defectuosa";
             }
 
         }
